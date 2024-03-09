@@ -206,7 +206,8 @@
     justify-content: center;
     align-items: center;
   }
-  .mapcarte {
+  .mapcarte.leaflet-container {
+    
     border-radius: 10px;
     border: 2px solid $color-11;
     -webkit-box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
@@ -214,6 +215,7 @@
     box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
   }
   .mapcartemodal {
+   
     border-radius: 10px;
     border: 2px solid $color-11;
     -webkit-box-shadow: 0px 21px 52px -13px rgba(237, 237, 237, 0.56);

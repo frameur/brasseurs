@@ -7,7 +7,7 @@ const AffichageMap = () => {
   return (
     <div className="content_textmodal">
       <Navigation />
-      {/* <MapModal /> */}
+      <MapModal />
     </div>
   )
 }
