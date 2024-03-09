@@ -24,7 +24,7 @@ const Home = () => {
       )
       setBreweriesData(filteredData)
     } else {
-      setBreweriesData(data)
+      setBreweriesData([])
     }
   }, [selectedDepartment])
 
