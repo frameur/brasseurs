@@ -149,8 +149,8 @@ const Home = () => {
           center={centerCoords}
           zoom={8}
           style={{
-            height: '100vh',
-            width: '100vh',
+            height: '80vh',
+            width: '80%',
             margin: '0 auto',
           }}
         >
