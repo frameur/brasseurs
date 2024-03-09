@@ -27,7 +27,7 @@ h3 {
   nav a {
     display: block;
     position: relative;
-    color: #8d8d8d;
+    color: #1b0336;
     text-decoration: none;
     font-size: 14px;
     padding: calc(5px + 1vmin) calc(20px + 1vmin);
@@ -67,6 +67,7 @@ h3 {
     margin-left: 0;
     display: flex;
     justify-content: flex-start;
+    color: rgb(255, 0, 0);
   }
   .content-section p {
     margin-top: 10px;
