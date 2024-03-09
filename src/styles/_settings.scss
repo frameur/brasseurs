@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'font-1';
+    src: url(../assets/fonts/JosefinSans-Medium.ttf);
+  }
+  
+  $font-1: 'font-1', sans-serif;
+  
+  $color-1: #61dafb;
+  $color-2: rgb(231, 34, 12);
+  $color-3: #282c34;
+  $color-4: #4fedd2;
+  $color-5: #36d0ea;
+  $color-6: rgb(238, 238, 70);
+  $color-7: #2a1d52;
+  $color-8: #6c77f4;
+  $color-9: rgb(99, 164, 233);
+  $color-10: #546fe4;
+  $color-11: #212040;
+  $color-12: rgb(100, 100, 100);
+  $white: #ddd;
+  $black: #333;
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: $white;
+    font-family: $font-1;
+    overflow-x: hidden;
+  }
+  li {
+    list-style-type: none;
+  }
+  
+  // search page accueil
+  .chearchName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: $font-1;
+  }
+  
+  .resultSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resultSearch input,
+  .resultSearch select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 400px;
+    height: 80px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid $color-11;
+    -webkit-box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
+    box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
+    cursor: pointer;
+  }
+  
+  .resultSearch p {
+    margin: 12px;
+    font-size: 30px;
+    // opacity: 0;
+    text-transform: uppercase;
+  }
+  .resultSearch span {
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  
+  // search and select page about
+  
+  .select_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
+  
+    // font-size: 50px;
+  }
+  .custom-select {
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .content_img {
+    display: flex;
+    justify-content: center;
+    width: 24rem;
+    height: 20rem;
+    margin-top: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  h4 {
+    margin-right: 25px;
+    font-size: 12px;
+    color: #c71b12;
+    text-transform: uppercase;
+  }
+  .linkWeb h3 {
+    display: flex;
+    justify-content: center;
+  }
+  p.content_text {
+    width: 90%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    line-height: 20px;
+    margin: 0 auto;
+  }
+  p.content_text h4 {
+    margin-right: 10px;
+    width: 80%;
+    font-size: 12px;
+    color: #c71b12;
+    text-transform: uppercase;
+  }
+  h1 {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .details span a {
+    color: $color-6;
+  }
+  inpuText {
+    color: red;
+  }
+  .departmentList {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: orangered;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  
+  td.css-132a6sb-MuiTableCell-root {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(14, 15, 31);
+  }
+  
+  td.css-132a6sb-MuiTableCell-root.MuiTableCell-body:nth-child(2) {
+    background-color: #bfc5e1;
+  }
+  td.css-132a6sb-MuiTableCell-root.MuiTableCell-body:nth-child(3) {
+    background-color: #eac5c3;
+  }
+  td.css-132a6sb-MuiTableCell-root.MuiTableCell-body:hover:nth-child(1) {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  tr.css-1enotpu-MuiTableRow-root:hover {
+    background-color: black;
+    font-weight: bold;
+  }
+  th.css-1wvnaxz-MuiTableCell-root.MuiTableCell-head {
+    text-transform: uppercase;
+  }
+  .clearButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapcarte {
+    border-radius: 10px;
+    border: 2px solid $color-11;
+    -webkit-box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
+    box-shadow: 13px 15px 43px -14px rgba(0, 0, 0, 0.66);
+  }
+  .mapcartemodal {
+    border-radius: 10px;
+    border: 2px solid $color-11;
+    -webkit-box-shadow: 0px 21px 52px -13px rgba(237, 237, 237, 0.56);
+    -moz-box-shadow: 0px 21px 52px -13px rgba(237, 237, 237, 0.56);
+    box-shadow: 0px 21px 52px -13px rgba(237, 237, 237, 0.56);
+  }
+  
