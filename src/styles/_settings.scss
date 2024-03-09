@@ -32,8 +32,18 @@
     font-family: $font-1;
     overflow-x: hidden;
   }
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
   li {
     list-style-type: none;
+    font-size: 1rem;
+   
+
+    
   }
   
   // search page accueil
