@@ -18,11 +18,11 @@ const Navigation = () => {
         </ul>
       </NavLink>
       <NavLink
-        to="/leaflet"
+        to="/histoire"
         className={(nav) => (nav.isActive ? 'nav-active' : '')}
       >
         <ul>
-          <li>Map leaflet</li>
+          <li>story</li>
         </ul>
       </NavLink>
     </div>

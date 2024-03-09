@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
-import AffichageMap from './pages/AffichageMap'
+import Historybeer from './pages/Historybeer'
 import Home from './pages/Home'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/leaflet" element={<AffichageMap />} />
+        <Route path="/histoire" element={<Historybeer />} />
       </Routes>
     </BrowserRouter>
   )
