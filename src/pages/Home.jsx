@@ -314,31 +314,7 @@ const Home = () => {
       )}
       <br />
       {/* tableau de l'ensemble des brasseurs par département */}
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <StyledTableCell align="left">Classement</StyledTableCell>
-              <StyledTableCell align="left">CP Département</StyledTableCell>
-              <StyledTableCell align="left">
-                Nb de brasseries ({totalBrasseries})
-              </StyledTableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {Object.entries(nbBrasseriesParDepartement)
-              .sort((a, b) => b[1] - a[1])
-              .map(([departement, nbBrasseries], index) => (
-                <StyledTableRow key={departement}>
-                  {/* <StyledTableCell></StyledTableCell> */}
-                  <StyledTableCell align="left">{index + 1}</StyledTableCell>
-                  <StyledTableCell align="left">{departement}</StyledTableCell>
-                  <StyledTableCell align="left">{nbBrasseries}</StyledTableCell>
-                </StyledTableRow>
-              ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+ 
     </div>
   )
 }

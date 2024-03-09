@@ -23,6 +23,7 @@ const About = () => {
   return (
     <div>
       <Navigation />
+      
       <h1 className="pageTitle">le brasseur</h1>
       <div className="select_content ">
         <select
