@@ -17,15 +17,23 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
+    fontSize:20,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
+    fontSize: 13,
+   
+
+    
   },
 }))
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
     backgroundColor: theme.palette.action.hover,
+   
+    
+    
+
   },
   '&:last-child td, &:last-child th': {
     border: 0,
@@ -54,15 +62,15 @@ function Tableaubrewers() {
   return (
     <div>
       <Navigation />
-      <h1>tableau répartition des brasseurs</h1>
+      <h2>tableau répartition des brasseurs</h2>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
-              <StyledTableCell align="left">Classement</StyledTableCell>
-              <StyledTableCell align="left">CP Département</StyledTableCell>
+              <StyledTableCell align="left">Order</StyledTableCell>
+              <StyledTableCell align="left">CP</StyledTableCell>
               <StyledTableCell align="left">
-                Nb de brasseries ({totalBrasseries})
+                Nb  ({totalBrasseries})
               </StyledTableCell>
             </TableRow>
           </TableHead>

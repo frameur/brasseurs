@@ -18,3 +18,34 @@
     
     /* Cachez ou réorganisez les éléments du tableau pour s'adapter à un affichage vertical sur les petits écrans si nécessaire */
   }
+  /* tableaubrewers.css */
+
+/* Style the table container */
+.TableContainer {
+    margin: 20px;
+    overflow-x: auto;
+  }
+  
+  /* Style the table headers */
+  .TableHead {
+    background-color: #c70909;
+  }
+  
+  /* Style the table rows */
+  .TableRow {
+    &:nth-of-type(odd) {
+      background-color: #e21e1e;
+    }
+  }
+  
+  /* Style the table cells */
+  .TableCell {
+    &.head {
+      background-color: #333;
+      color: #fff;
+    }
+  
+    &.body {
+      font-size: 14px;
+    }
+  }
