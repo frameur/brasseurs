@@ -13,6 +13,8 @@ h3 {
     display: flex;
     padding: 0 20px;
     behavior: smooth;
+    
+   
   }
   /* Media Queries pour les styles responsives */
 
@@ -44,6 +46,7 @@ h3 {
   }
 
   .documentation-container {
+    overflow-y: hidden;
     padding: 0 10px; /* Ajuster les marges sur les écrans très petits */
   }
 }
