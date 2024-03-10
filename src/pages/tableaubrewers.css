@@ -1,0 +1,20 @@
+/* Styles de base pour le tableau */
+.TableContainer {
+    overflow: auto; /* Permettre le défilement horizontal sur les petits écrans */
+    max-width: 100%; /* Assurez-vous que le tableau s'adapte à la largeur de l'écran */
+  }
+  
+  /* Styles pour les cellules du tableau */
+  .StyledTableCell {
+    padding: 8px; /* Ajoutez un peu d'espace autour du texte dans les cellules */
+  }
+  
+  /* Media Queries pour les styles responsives */
+  @media (max-width: 768px) {
+    /* Réduisez la taille de la police pour les cellules du tableau sur les petits écrans */
+    .StyledTableCell {
+      font-size: 12px;
+    }
+    
+    /* Cachez ou réorganisez les éléments du tableau pour s'adapter à un affichage vertical sur les petits écrans si nécessaire */
+  }

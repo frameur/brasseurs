@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../services/projectsData'
+import data from '../services/data'
 import {
   Table,
   TableHead,
@@ -11,6 +11,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell'
 import { styled } from '@mui/material/styles'
 import Paper from '@mui/material/Paper'
 import Navigation from '../components/Navigation'
+import './tableaubrewers.css'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
