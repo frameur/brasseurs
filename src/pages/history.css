@@ -46,7 +46,7 @@ h3 {
   }
 
   .documentation-container {
-    overflow-y: hidden;
+    overflow-x: hidden;
     padding: 0 10px; /* Ajuster les marges sur les écrans très petits */
   }
 }
