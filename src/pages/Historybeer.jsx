@@ -16,103 +16,90 @@ import img16 from './images/bocks.webp'
 import img18 from './images/tablebeer2.jpg'
 
 export default function Historybeer() {
-  const sections = [...document.querySelectorAll('.content-section')]
-  const navLinks = [...document.querySelectorAll('nav a')]
-  const [firstLoad, setFirstLoad] = useState(true)
-  const [data, setData] = useState([])
-  const savedIndexRef = useRef()
-  let resizeObserver
-  let intersectionObserver
+
+  
+  const sections = [...document.querySelectorAll('.content-section')];
+  const navLinks = [...document.querySelectorAll('nav a')];
+  const [firstLoad, setFirstLoad] = useState(true);
+  const [data, setData] = useState([]);
+  const savedIndexRef = useRef();
+  let resizeObserver;
+  let intersectionObserver;
 
   useEffect(() => {
     const handleResize = () => {
       if (!firstLoad) {
-        const newData = sections.current.map((section) => section.offsetTop)
-        setData(newData)
-        setFirstLoad(false)
+        const newData = sections.map((section) => section.offsetTop);
+        setData(newData);
+        setFirstLoad(false);
+        console.log(newData);
       }
-    }
-
+    };
     const handleScroll = () => {
-      const trigger = window.scrollY + window.innerHeight / 3
-
-      for (const i of sections) {
-        const index = sections.indexOf(i)
-        const section = document.getElementById(i.id)
-
-        if (
-          section &&
-          section.offsetTop <= trigger &&
-          section.offsetTop + section.offsetHeight > trigger
-        ) {
-          if (index !== savedIndexRef.current) {
-            savedIndexRef.current = index
-            addClassNameAndClear(index)
-          }
-          break
-        }
-
-        if (
-          index === data.length - 1 &&
-          data[index] &&
-          trigger >= data[index]
-        ) {
-          if (index !== savedIndexRef.current) {
-            savedIndexRef.current = index
-            addClassNameAndClear(index)
-          }
+      const trigger = window.scrollY + window.innerHeight / 3;
+    
+      let currentSectionIndex = -1;
+    
+      // Trouver l'index de la section actuellement visible
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        if (section.offsetTop <= trigger && section.offsetTop + section.offsetHeight > trigger) {
+          currentSectionIndex = i;
+          break;
         }
       }
-    }
+    
+      // Ajouter la classe "marked" au lien de menu correspondant à la section visible
+      navLinks.forEach((link, index) => {
+        if (index === currentSectionIndex) {
+          link.classList.add('marked');
+        } else {
+          link.classList.remove('marked');
+        }
+      });
+    };
+    
+    // Écouter l'événement de scroll
+    window.addEventListener('scroll', handleScroll);
+
+
 
     const startWatching = (entries) => {
       if (entries[0].isIntersecting) {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll);
       } else if (!entries[0].isIntersecting) {
         const elToClean = navLinks.find((navLink) =>
-          navLink.className.includes('marked')
-        )
-        if (elToClean) elToClean.classList.remove('marked')
-        savedIndexRef.current = undefined
-        window.removeEventListener('scroll', handleScroll)
+          navLink.classList.contains('marked')
+        );
+        if (elToClean) elToClean.classList.remove('marked');
+        savedIndexRef.current = undefined;
+        window.removeEventListener('scroll', handleScroll);
+        
       }
-    }
+    };
 
-    const documentationContent = document.querySelector(
-      '.documentation-content'
-    )
+    const documentationContent = document.querySelector('.documentation-content');
     if (documentationContent) {
-      window.addEventListener('load', handleResize)
-      window.addEventListener('resize', handleResize)
-      const resizeObserver = new ResizeObserver(handleResize)
-      resizeObserver.observe(documentationContent)
-      const intersectionObserver = new IntersectionObserver(startWatching, {
-        rootMargin: '10% 0px',
-      })
-      intersectionObserver.observe(documentationContent)
-    }
+      window.addEventListener('load', handleResize);
+      window.addEventListener('resize', handleResize);
+      resizeObserver = new ResizeObserver(handleResize);
+      resizeObserver.observe(documentationContent);
 
-    navLinks.forEach((navLink, index) => {
-      navLink.addEventListener('click', handleNavLinkClick)
-    })
+      intersectionObserver = new IntersectionObserver(startWatching, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+      });
+      intersectionObserver.observe(documentationContent);
 
     return () => {
-      window.removeEventListener('load', handleResize)
-      window.removeEventListener('resize', handleResize)
-      if (resizeObserver) {
-        resizeObserver.disconnect()
-      }
-      if (intersectionObserver) {
-        intersectionObserver.disconnect()
-      }
-      navLinks.forEach((navLink) => {
-        navLink.removeEventListener('click', handleNavLinkClick)
-      })
-      window.removeEventListener('scroll', handleScroll)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
+      window.removeEventListener('load', handleResize);
+      window.removeEventListener('resize', handleResize);
+      resizeObserver.disconnect();
+      intersectionObserver.disconnect();
+    };
+  }
+}, [sections, navLinks, firstLoad, savedIndexRef, intersectionObserver, resizeObserver]);
   const handleNavLinkClick = (e) => {
     e.preventDefault()
     const index = navLinks.indexOf(e.target)
@@ -123,19 +110,14 @@ export default function Historybeer() {
     })
   }
 
-  const addClassNameAndClear = (index) => {
-    const elToClean = navLinks.find((navLink) =>
-      navLink.className.includes('marked')
-    )
-
-    if (elToClean) elToClean.classList.remove('marked')
-    navLinks[index].classList.add('marked')
-  }
+ 
   return (
     <div>
       <Navigation />
       <h1>histoire de la biére</h1>
       <div className="documentation-container">
+      <p>{data}</p>
+     
         <nav>
           {sections.map((section, index) => (
             <a

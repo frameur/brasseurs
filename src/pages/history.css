@@ -14,6 +14,40 @@ h3 {
     padding: 0 20px;
     behavior: smooth;
   }
+  /* Media Queries pour les styles responsives */
+
+/* Pour les écrans de taille moyenne */
+@media (max-width: 1100px) {
+  .documentation-container {
+    flex-direction: column; /* Afficher les éléments en colonne sur les petits écrans */
+  }
+
+  nav {
+    display: none;
+    width: 100%; /* Prendre la largeur complète sur les petits écrans */
+    margin: 0; /* Supprimer la marge sur les petits écrans */
+    position: static; /* Position statique sur les petits écrans */
+    border: none; /* Supprimer la bordure sur les petits écrans */
+    border-radius: 0; /* Supprimer la bordure arrondie sur les petits écrans */
+  }
+
+  nav a {
+    padding: 10px; /* Ajuster le rembourrage sur les petits écrans */
+    font-size: 12px; /* Ajuster la taille de la police sur les petits écrans */
+  }
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 24px; /* Ajuster la taille de la police pour les écrans très petits */
+  }
+
+  .documentation-container {
+    padding: 0 10px; /* Ajuster les marges sur les écrans très petits */
+  }
+}
+
   
   nav {
     align-self: flex-start;
