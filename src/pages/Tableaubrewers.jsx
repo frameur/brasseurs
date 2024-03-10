@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../services/data'
+import data from '../services/data_breweries2023'
 import {
   Table,
   TableHead,
@@ -79,7 +79,7 @@ function Tableaubrewers() {
               .sort((a, b) => b[1] - a[1])
               .map(([departement, nbBrasseries], index) => (
                 <StyledTableRow key={departement}>
-                  <StyledTableCell align="left">{index + 1}</StyledTableCell>
+                  <StyledTableCell align="left">{index +1}</StyledTableCell>
                   <StyledTableCell align="left">{departement}</StyledTableCell>
                   <StyledTableCell align="left">{nbBrasseries}</StyledTableCell>
                 </StyledTableRow>
