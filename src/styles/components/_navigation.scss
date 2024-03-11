@@ -4,11 +4,14 @@
   background: url(../../pages/images/banner.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  
 }
 
 .navigation a {
   text-decoration: none;
+ 
+
 }
 
 .navigation ul {
@@ -22,12 +25,14 @@
   text-transform: uppercase;
   background: #000;
   padding: 10px;
+  font-weight: 800;
+
 }
 
 .navigation li:hover {
   color: $color-2; /* Remplacer par la valeur appropriée */
-  transform: scale(1.2);
-  font-weight: 800;
+  // transform: scale(1.2);
+  // font-weight: 800;
 }
 
 .navigation li.nav-active {

@@ -114,7 +114,7 @@ export default function Historybeer() {
   return (
     <div>
       <Navigation />
-      <h1>histoire de la biére</h1>
+      <h1 className='titrestory'>histoire de la biére</h1>
       <div className="documentation-container">
       <p>{data}</p>
      

@@ -62,7 +62,7 @@ function Tableaubrewers() {
   return (
     <div>
       <Navigation />
-      <h2>tableau répartition des brasseurs</h2>
+      <h1>tableau répartition des brasseurs</h1>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
