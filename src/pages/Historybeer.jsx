@@ -118,7 +118,7 @@ export default function Historybeer() {
       <div className="documentation-container">
       <p>{data}</p>
      
-        <nav>
+        <nav className='historynav'>
           {sections.map((section, index) => (
             <a
               key={index}

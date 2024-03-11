@@ -23,9 +23,12 @@ h3 {
   .documentation-container {
     flex-direction: column; /* Afficher les éléments en colonne sur les petits écrans */
   }
+  .historynav{
+    display: none;
+  }
 
   nav {
-    display: none;
+   
     width: 100%; /* Prendre la largeur complète sur les petits écrans */
     margin: 0; /* Supprimer la marge sur les petits écrans */
     position: static; /* Position statique sur les petits écrans */
