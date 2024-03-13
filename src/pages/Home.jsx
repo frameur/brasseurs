@@ -272,7 +272,7 @@ const Home = () => {
                         </div>
                         <div className="content_textmodal">
                           <h1>{val.nameBrass}</h1>
-                          <h2>{val.title}</h2>
+                         <h2 className="title">{val.title}</h2>
                           <p>{val.infos}</p>
                         </div>
                       </ContentModal>

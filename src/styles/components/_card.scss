@@ -184,18 +184,16 @@
   }
   .poster_modal {
     grid-area: a;
-    background: #546fe4;
-    // display: flex;
-    // align-items: flex-start;
-    // height: 780px;
-    // background-color: $color-1;
+    height: 100vh;
+    background-color: $color-1;
   }
   .poster_modal img {
     grid-area: a;
-    width: 53%;
+    width: 50%;
   }
   .content_textmodal h1 {
     position: absolute;
+    font-size: 100%;
     left: 55%;
     top: 5%;
     text-transform: uppercase;
@@ -203,6 +201,7 @@
   }
   .content_textmodal h2 {
     position: absolute;
+    font-size: 90%;
     left: 55%;
     top: 10%;
     text-transform: uppercase;
@@ -211,14 +210,15 @@
     position: absolute;
     left: 55%;
     top: 15%;
-    font-size: 1.1rem;
+    font-size: 90%;
+    color: #e9d9d9;
   }
   .carteAffichage {
     position: absolute;
-    right: 80px;
-    bottom: 40px;
-    width: 500px;
-    height: 500px;
+    right: 9vh;
+    bottom: 10vh;
+    width: 40%;
+    height: 50%;
   }
   @media only screen and (max-width: 768px) {
     .ContentModal {
@@ -229,7 +229,7 @@
   
     .poster_modal {
       flex: 1 1 auto;
-      height: 780px;
+      
     }
   
     .content_textmodal {
