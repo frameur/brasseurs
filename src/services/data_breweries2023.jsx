@@ -13,8 +13,8 @@ const data_breweries2023 =[
         "nameTown": "BOURG-EN-BRESSE",
         "link": "iut.univ-lyon1.fr , www.alimentec.com",
         "ville_departement": "01 - Ain",
-        "lng": "5.216667",
-        "lat": "46.200000",
+        "lng": 5.216667,
+        "lat": 46.200000,
         "dateCréa": "Sep-08"
     },
     {
@@ -31,8 +31,8 @@ const data_breweries2023 =[
         "nameTown": "HAUTEVILLE-LOMPNES",
         "link": "la-biere-du-plateau.webnode.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.600000",
-        "lat": "45.966667",
+        "lng": 5.600000,
+        "lat": 45.966667,
         "dateCréa": "Mar-17"
     },
     {
@@ -49,8 +49,8 @@ const data_breweries2023 =[
         "nameTown": "PIZAY",
         "link": "brasserielacorneille.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.083333",
-        "lat": "45.883333",
+        "lng": 5.083333,
+        "lat": 45.883333,
         "dateCréa": "Oct-21"
     },
     {
@@ -67,8 +67,8 @@ const data_breweries2023 =[
         "nameTown": "BELLEYDOUX",
         "link": "lapiva.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.766667",
-        "lat": "46.250000",
+        "lng": 5.766667,
+        "lat": 46.250000,
         "dateCréa": "Dec-15"
     },
     {
@@ -85,8 +85,8 @@ const data_breweries2023 =[
         "nameTown": "LE POIZAT-LALLEYRIAT",
         "link": "www.brasserie-letincelle.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.707701",
-        "lat": "46.165581",
+        "lng": 5.707701,
+        "lat": 46.165581,
         "dateCréa": "Jun-18"
     },
     {
@@ -103,8 +103,8 @@ const data_breweries2023 =[
         "nameTown": "SAINT-DIDIER-SUR-CHALARONNE",
         "link": "www.souslebois.com",
         "ville_departement": "01 - Ain",
-        "lng": "4.81667",
-        "lat": " 46.166672",
+        "lng": 4.81667,
+        "lat": 46.166672,
         "dateCréa": "Aug-18"
     },
     {
@@ -121,8 +121,8 @@ const data_breweries2023 =[
         "nameTown": "CHAZEY-SUR-AIN",
         "link": "brasserie-da-costa.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.250000",
-        "lat": "45.900000",
+        "lng": 5.250000,
+        "lat": 45.900000,
         "dateCréa": "May-21"
     },
     {
@@ -139,8 +139,8 @@ const data_breweries2023 =[
         "nameTown": "LEYMENT",
         "link": "laleymentaise.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.300000",
-        "lat": "45.916667",
+        "lng": 5.300000,
+        "lat": 45.916667,
         "dateCréa": "May-20"
     },
     {
@@ -157,8 +157,8 @@ const data_breweries2023 =[
         "nameTown": "BILLIAT",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "5.783333",
-        "lat": "46.066667",
+        "lng": 5.783333,
+        "lat": 46.066667,
         "dateCréa": "Nov-17"
     },
     {
@@ -175,8 +175,8 @@ const data_breweries2023 =[
         "nameTown": "FERNEY-VOLTAIRE",
         "link": "www.biereyourself.fr",
         "ville_departement": "01 - Ain",
-        "lng": "6.116667",
-        "lat": "46.250000",
+        "lng": 6.116667,
+        "lat": 46.250000,
         "dateCréa": "Oct-18"
     },
     {
@@ -193,8 +193,8 @@ const data_breweries2023 =[
         "nameTown": "ORNEX",
         "link": "www.brasseriegessienne.fr",
         "ville_departement": "01 - Ain",
-        "lng": "6.100000",
-        "lat": "46.283333",
+        "lng": 6.100000,
+        "lat": 46.283333,
         "dateCréa": "Sep-12"
     },
     {
@@ -211,8 +211,8 @@ const data_breweries2023 =[
         "nameTown": "GRILLY",
         "link": "www.brasserie-artisanale-de-grilly.fr",
         "ville_departement": "01 - Ain",
-        "lng": "6.116667",
-        "lat": "46.333333",
+        "lng": 6.116667,
+        "lat": 46.333333,
         "dateCréa": "Nov-17"
     },
     {
@@ -229,8 +229,8 @@ const data_breweries2023 =[
         "nameTown": "GRILLY",
         "link": "www.brasserie-artisanale-de-grilly.fr",
         "ville_departement": "01 - Ain",
-        "lng": "6.1171067",
-        "lat": "46.33739",
+        "lng": 6.1171067,
+        "lat": 46.33739,
         "dateCréa": "Feb-18"
     },
     {
@@ -247,8 +247,8 @@ const data_breweries2023 =[
         "nameTown": "LENT",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "5.200000",
-        "lat": "46.116667",
+        "lng": 5.200000,
+        "lat": 46.116667,
         "dateCréa": "Apr-22"
     },
     {
@@ -265,8 +265,8 @@ const data_breweries2023 =[
         "nameTown": "MONTAGNAT",
         "link": "www.brasserie-saint-clair.com",
         "ville_departement": "01 - Ain",
-        "lng": "5.283333",
-        "lat": "46.166667",
+        "lng": 5.283333,
+        "lat": 46.166667,
         "dateCréa": "Aug-17"
     },
     {
@@ -283,8 +283,8 @@ const data_breweries2023 =[
         "nameTown": "BELMONT-LUTHÉZIEU",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "5.66585 ",
-        "lat": "45.8817",
+        "lng": 5.66585,
+        "lat": 45.8817,
         "dateCréa": "2003"
     },
     {
@@ -301,8 +301,8 @@ const data_breweries2023 =[
         "nameTown": "ANDERT-ET-CONDON",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "5.650000",
-        "lat": "45.800000",
+        "lng": 5.650000,
+        "lat": 45.800000,
         "dateCréa": "Jan-19"
     },
     {
@@ -319,8 +319,8 @@ const data_breweries2023 =[
         "nameTown": "IZIEU",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "5.633333",
-        "lat": "45.650000",
+        "lng": 5.633333,
+        "lat": 45.650000,
         "dateCréa": "Sep-20"
     },
     {
@@ -337,8 +337,8 @@ const data_breweries2023 =[
         "nameTown": "PEYRIEU",
         "link": "www.twohatsbrewing.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.67751",
-        "lat": "45.6767",
+        "lng": 5.67751,
+        "lat": 45.6767,
         "dateCréa": "Jan-18"
     },
     {
@@ -355,8 +355,8 @@ const data_breweries2023 =[
         "nameTown": "BÂGÉ-DOMMARTIN",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "4.984528",
-        "lat": "46.348942",
+        "lng": 4.984528,
+        "lat": 46.348942,
         "dateCréa": "Jan-18"
     },
     {
@@ -373,8 +373,8 @@ const data_breweries2023 =[
         "nameTown": "BÂGÉ-DOMMARTIN",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "4.932879",
-        "lat": "46.347782",
+        "lng": 4.932879,
+        "lat": 46.347782,
         "dateCréa": "Jun-22"
     },
     {
@@ -391,8 +391,8 @@ const data_breweries2023 =[
         "nameTown": "NEUVILLE-LES-DAMES",
         "link": "bierelapoule.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.000000",
-        "lat": "46.166667",
+        "lng": 5.000000,
+        "lat": 46.166667,
         "dateCréa": "Oct-18"
     },
     {
@@ -409,8 +409,8 @@ const data_breweries2023 =[
         "nameTown": "CHAMPFROMIER",
         "link": "lagorgeedevalserine.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.816667",
-        "lat": "46.200000",
+        "lng": 5.816667,
+        "lat": 46.200000,
         "dateCréa": "Mar-19"
     },
     {
@@ -427,8 +427,8 @@ const data_breweries2023 =[
         "nameTown": "MAILLAT",
         "link": "www.macnevers-and-co.beer",
         "ville_departement": "01 - Ain",
-        "lng": "5.550000",
-        "lat": "46.133333",
+        "lng": 5.550000,
+        "lat": 46.133333,
         "dateCréa": "Jun-18"
     },
     {
@@ -445,8 +445,8 @@ const data_breweries2023 =[
         "nameTown": "SAINT-ALBAN",
         "link": "grangenoire.com",
         "ville_departement": "01 - Ain",
-        "lng": "5.450000",
-        "lat": "46.100000",
+        "lng": 5.450000,
+        "lat": 46.100000,
         "dateCréa": "Sep-19"
     },
     {
@@ -463,8 +463,8 @@ const data_breweries2023 =[
         "nameTown": "SAINT-GENIS-POUILLY",
         "link": "www.obrasseur.com",
         "ville_departement": "01 - Ain",
-        "lng": "6.016667",
-        "lat": "46.250000",
+        "lng": 6.016667,
+        "lat": 46.250000,
         "dateCréa": "Jul-12"
     },
     {
@@ -481,8 +481,8 @@ const data_breweries2023 =[
         "nameTown": "BOYEUX-SAINT-JÉRÔME",
         "link": "www.brasserielesindomptables.com",
         "ville_departement": "01 - Ain",
-        "lng": "5.466667",
-        "lat": "46.033333",
+        "lng": 5.466667,
+        "lat": 46.033333,
         "dateCréa": "Sep-21"
     },
     {
@@ -499,8 +499,8 @@ const data_breweries2023 =[
         "nameTown": "JUJURIEUX",
         "link": "",
         "ville_departement": "01 - Ain",
-        "lng": "5.3942482",
-        "lat": "46.0393642",
+        "lng": 5.3942482,
+        "lat": 46.0393642,
         "dateCréa": "Jun-20"
     },
     {
@@ -517,8 +517,8 @@ const data_breweries2023 =[
         "nameTown": "JUJURIEUX",
         "link": "rivieredain.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.388449",
-        "lat": "46.0513009",
+        "lng": 5.388449,
+        "lat": 46.0513009,
         "dateCréa": "Oct-05"
     },
     {
@@ -535,8 +535,8 @@ const data_breweries2023 =[
         "nameTown": "BEYNOST",
         "link": "brewlab.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.000000",
-        "lat": "45.833333",
+        "lng": 5.000000,
+        "lat": 45.833333,
         "dateCréa": "Sep-21"
     },
     {
@@ -553,8 +553,8 @@ const data_breweries2023 =[
         "nameTown": "MEXIMIEUX",
         "link": "www.malt-emoi.fr",
         "ville_departement": "01 - Ain",
-        "lng": "5.200000",
-        "lat": "45.900000",
+        "lng": 5.200000,
+        "lat": 45.900000,
         "dateCréa": "Mar-18"
     },
     {
@@ -750,7 +750,7 @@ const data_breweries2023 =[
         "cp": "2590",
         "nameTown": "GERMAINE",
         "link": "www.lagermoise.fr",
-        "ville_departement": "",
+        "ville_departement": "02 - Aisne",
         "lng": "",
         "lat": "",
         "dateCréa": "Nov-15"
@@ -6816,8 +6816,8 @@ const data_breweries2023 =[
         "cp": "19100",
         "nameTown": "BRIVE-LA-GAILLARDE",
         "link": "www.labrasseriegaillarde.fr",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6834,8 +6834,8 @@ const data_breweries2023 =[
         "cp": "19100",
         "nameTown": "BRIVE-LA-GAILLARDE",
         "link": "www.labanou.com",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6852,8 +6852,8 @@ const data_breweries2023 =[
         "cp": "19130",
         "nameTown": "OBJAT",
         "link": "www.brasserie-fonseca.fr",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6870,8 +6870,8 @@ const data_breweries2023 =[
         "cp": "19140",
         "nameTown": "UZERCHE",
         "link": "brasserie-vezere.fr",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6888,8 +6888,8 @@ const data_breweries2023 =[
         "cp": "19160",
         "nameTown": "LIGINIAC",
         "link": "",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6906,8 +6906,8 @@ const data_breweries2023 =[
         "cp": "19250",
         "nameTown": "COMBRESSOL",
         "link": "",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6924,8 +6924,8 @@ const data_breweries2023 =[
         "cp": "19300",
         "nameTown": "ÉGLETONS",
         "link": "",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6942,8 +6942,8 @@ const data_breweries2023 =[
         "cp": "19330",
         "nameTown": "SAINT-GERMAIN-LES-VERGNES",
         "link": "brasserie-hv.fr",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6960,8 +6960,8 @@ const data_breweries2023 =[
         "cp": "19450",
         "nameTown": "CHAMBOULIVE",
         "link": "brasseriedesanges.com",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6978,8 +6978,8 @@ const data_breweries2023 =[
         "cp": "19500",
         "nameTown": "MARCILLAC-LA-CROZE",
         "link": "www.brasserie-correzienne.com",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -6996,8 +6996,8 @@ const data_breweries2023 =[
         "cp": "19600",
         "nameTown": "LARCHE",
         "link": "www.brasserieducausse.fr",
-        "ville_departement": "\"19 - ",
-        "lng": "Corrèze\"",
+        "ville_departement": "19 - Corrèze",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -7014,8 +7014,8 @@ const data_breweries2023 =[
         "cp": "20000",
         "nameTown": "AJACCIO",
         "link": "",
-        "ville_departement": "\"2A - ",
-        "lng": "Corse-du-Sud\"",
+        "ville_departement": "2A - Corse-du-Sud",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -7032,8 +7032,8 @@ const data_breweries2023 =[
         "cp": "20000",
         "nameTown": "AJACCIO",
         "link": "",
-        "ville_departement": "\"2A - ",
-        "lng": "Corse-du-Sud\"",
+        "ville_departement": "2A - Corse-du-Sud",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -7050,8 +7050,8 @@ const data_breweries2023 =[
         "cp": "20166",
         "nameTown": "GROSSETO-PRUGNA",
         "link": "",
-        "ville_departement": "\"2A - ",
-        "lng": "Corse-du-Sud\"",
+        "ville_departement": "2A - Corse-du-Sud",
+        "lng": "",
         "lat": "",
         "dateCréa": ""
     },
@@ -25182,7 +25182,7 @@ const data_breweries2023 =[
         "dateCréa": "2015"
     },
     {
-        "id": "2557",
+        "id": "1401",
         "code": "PA01523",
         "nameBrass": "de la Presqu'Île de Quiberon",
         "img": "./images/logo2.jpg",
