@@ -62,7 +62,7 @@ function Tableaubrewers() {
   return (
     <div>
       <Navigation />
-      <h1>tableau répartition des brasseurs</h1>
+      <h1>tableau répartition des brasseurs (Novembre 2023)</h1>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
