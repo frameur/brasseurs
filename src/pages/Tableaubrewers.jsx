@@ -52,6 +52,10 @@ function Tableaubrewers() {
       nbBrasseriesParDepartement[departement] = 1
     }
   }
+ 
+
+
+
 
   // Afficher le total des brasseurs
   const totalBrasseries = Object.values(nbBrasseriesParDepartement).reduce(
