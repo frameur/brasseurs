@@ -1,146 +1,111 @@
-import React, { useState, useEffect, useRef } from 'react'
-import Navigation from '../components/Navigation'
-import './history.css'
-import img1 from './images/introduction.jpg'
-import img3 from './images/sumeriens.webp'
-import img5 from './images/grec.webp'
-import img8 from './images/brasseur.webp'
-import img9 from './images/guildes.webp'
-import img10 from './images/cervoise.webp'
-import img11 from './images/revolution.webp'
-import img12 from './images/pasteur.webp'
-import img13 from './images/moderne.webp'
-import img14 from './images/declin.webp'
-import img15 from './images/renouveau.webp'
-import img16 from './images/bocks.webp'
-import img18 from './images/tablebeer2.jpg'
+import React, { useState, useEffect, useRef } from "react";
+import Navigation from "../components/Navigation";
+import "./history.css";
+import img1 from "./images/introduction.jpg";
+import img3 from "./images/sumeriens.webp";
+import img5 from "./images/grec.webp";
+import img8 from "./images/brasseur.webp";
+import img9 from "./images/guildes.webp";
+import img10 from "./images/cervoise.webp";
+import img11 from "./images/revolution.webp";
+import img12 from "./images/pasteur.webp";
+import img13 from "./images/moderne.webp";
+import img14 from "./images/declin.webp";
+import img15 from "./images/renouveau.webp";
+import img16 from "./images/bocks.webp";
+import img18 from "./images/tablebeer2.jpg";
 
 export default function Historybeer() {
-
-  
-  const sections = [...document.querySelectorAll('.content-section')];
-  const navLinks = [...document.querySelectorAll('nav a')];
-  const [firstLoad, setFirstLoad] = useState(true);
-  const [data, setData] = useState([]);
-  const savedIndexRef = useRef();
-  let resizeObserver;
-  let intersectionObserver;
+  const sections = useRef([]);
+  const navLinks = useRef([]);
 
   useEffect(() => {
-    const handleResize = () => {
-      if (!firstLoad) {
-        const newData = sections.map((section) => section.offsetTop);
-        setData(newData);
-        setFirstLoad(false);
-        console.log(newData);
-      }
-    };
-    const handleScroll = () => {
-      const trigger = window.scrollY + window.innerHeight / 3;
-    
-      let currentSectionIndex = -1;
-    
-      // Trouver l'index de la section actuellement visible
-      for (let i = 0; i < sections.length; i++) {
-        const section = sections[i];
-        if (section.offsetTop <= trigger && section.offsetTop + section.offsetHeight > trigger) {
-          currentSectionIndex = i;
-          break;
-        }
-      }
-    
-      // Ajouter la classe "marked" au lien de menu correspondant à la section visible
-      navLinks.forEach((link, index) => {
-        if (index === currentSectionIndex) {
-          link.classList.add('marked');
-        } else {
-          link.classList.remove('marked');
-        }
-      });
-    };
-    
-    // Écouter l'événement de scroll
-    window.addEventListener('scroll', handleScroll);
+    sections.current = [...document.querySelectorAll(".content-section")];
+    navLinks.current = [...document.querySelectorAll("nav a")];
 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute("id");
+          if (entry.isIntersecting) {
+            navLinks.current.forEach((link) => {
+              link.classList.remove("marked");
+              if (link.getAttribute("href") === `#${id}`) {
+                link.classList.add("marked");
+              }
+            });
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-
-    const startWatching = (entries) => {
-      if (entries[0].isIntersecting) {
-        window.addEventListener('scroll', handleScroll);
-      } else if (!entries[0].isIntersecting) {
-        const elToClean = navLinks.find((navLink) =>
-          navLink.classList.contains('marked')
-        );
-        if (elToClean) elToClean.classList.remove('marked');
-        savedIndexRef.current = undefined;
-        window.removeEventListener('scroll', handleScroll);
-        
-      }
-    };
-
-    const documentationContent = document.querySelector('.documentation-content');
-    if (documentationContent) {
-      window.addEventListener('load', handleResize);
-      window.addEventListener('resize', handleResize);
-      resizeObserver = new ResizeObserver(handleResize);
-      resizeObserver.observe(documentationContent);
-
-      intersectionObserver = new IntersectionObserver(startWatching, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5,
-      });
-      intersectionObserver.observe(documentationContent);
+    sections.current.forEach((section) => {
+      observer.observe(section);
+    });
 
     return () => {
-      window.removeEventListener('load', handleResize);
-      window.removeEventListener('resize', handleResize);
-      resizeObserver.disconnect();
-      intersectionObserver.disconnect();
+      sections.current.forEach((section) => {
+        observer.unobserve(section);
+      });
     };
-  }
-}, [sections, navLinks, firstLoad, savedIndexRef, intersectionObserver, resizeObserver]);
+  }, []);
+
   const handleNavLinkClick = (e) => {
-    e.preventDefault()
-    const index = navLinks.indexOf(e.target)
-    const section = document.getElementById(sections[index].id)
+    e.preventDefault();
+    const index = navLinks.current.indexOf(e.target);
+    const section = document.getElementById(sections.current[index].id);
     window.scrollTo({
       top: section.offsetTop,
-      behavior: 'smooth',
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
- 
   return (
     <div>
       <Navigation />
-      <h1 className='titrestory'>histoire de la biére</h1>
+      <h1 className="titrestory">histoire de la biére</h1>
       <div className="documentation-container">
-      <p>{data}</p>
-     
-        <nav className='historynav'>
-          {sections.map((section, index) => (
-            <a
-              key={index}
-              href={`#${section}`}
-              onClick={() => handleNavLinkClick(index)}
-            >
-              {section}
-            </a>
-          ))}
-          <a href="#introduction">Introduction</a>
-          <a href="#1">Antiquité</a>
-          <a href="#2">Moyen Age</a>
-          <a href="#3">Renaissance</a>
-          <a href="#4">Ere Moderne</a>
-          <a href="#5">XIXE Siécle </a>
-          <a href="#6">XXE Siécle</a>
-          <a href="#7">XXIE Siécle</a>
-          <a href="#guildes">Les Guildes</a>
-          <a href="#pasteur">Louis Pasteur</a>
-          <a href="#bocks">Les Sous Bocks</a>
-          <a href="#tables">Tables beer</a>
-          <a href="#conclusion">Conclusion</a>
+        <nav className="historynav">
+          <a href="#introduction" onClick={handleNavLinkClick}>
+            Introduction
+          </a>
+          <a href="#1" onClick={handleNavLinkClick}>
+            Antiquité
+          </a>
+          <a href="#2" onClick={handleNavLinkClick}>
+            Moyen Age
+          </a>
+          <a href="#3" onClick={handleNavLinkClick}>
+            Renaissance
+          </a>
+          <a href="#4" onClick={handleNavLinkClick}>
+            Ere Moderne
+          </a>
+          <a href="#5" onClick={handleNavLinkClick}>
+            XIXE Siécle
+          </a>
+          <a href="#6" onClick={handleNavLinkClick}>
+            XXE Siécle
+          </a>
+          <a href="#7" onClick={handleNavLinkClick}>
+            XXIE Siécle
+          </a>
+          <a href="#guildes" onClick={handleNavLinkClick}>
+            Les Guildes
+          </a>
+          <a href="#pasteur" onClick={handleNavLinkClick}>
+            Louis Pasteur
+          </a>
+          <a href="#bocks" onClick={handleNavLinkClick}>
+            Les Sous Bocks
+          </a>
+          <a href="#tables" onClick={handleNavLinkClick}>
+            Tables beer
+          </a>
+          <a href="#conclusion" onClick={handleNavLinkClick}>
+            Conclusion
+          </a>
         </nav>
         <div className="documentation-content">
           <section className="content-section" id="introduction">
@@ -448,5 +413,5 @@ export default function Historybeer() {
         </div>
       </div>
     </div>
-  )
+  );
 }
