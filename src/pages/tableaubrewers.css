@@ -7,6 +7,7 @@
   /* Styles pour les cellules du tableau */
   .StyledTableCell {
     padding: 8px; /* Ajoutez un peu d'espace autour du texte dans les cellules */
+    background-color: #e21e1e;
   }
   
   /* Media Queries pour les styles responsives */
@@ -14,6 +15,7 @@
     /* Réduisez la taille de la police pour les cellules du tableau sur les petits écrans */
     .StyledTableCell {
       font-size: 12px;
+      
     }
     
     /* Cachez ou réorganisez les éléments du tableau pour s'adapter à un affichage vertical sur les petits écrans si nécessaire */
@@ -24,6 +26,7 @@
 .TableContainer {
     margin: 20px;
     overflow-x: auto;
+    
   }
   
   /* Style the table headers */
@@ -55,3 +58,10 @@
    
    
   }
+  .custom-table .custom-hover:hover {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+    color: #e21e1e;
+  }
+  
+
+  
