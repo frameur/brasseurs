@@ -13,15 +13,14 @@ import { styled } from '@mui/material/styles'
 import Paper from '@mui/material/Paper'
 import Navigation from '../components/Navigation'
 import './tableaubrewers.css'
-
 const StyledTablePagination = styled(TablePagination)(({ theme }) => ({
-  color: theme.palette.error.main, // Changez la couleur du texte en rouge
-  backgroundColor: theme.palette.common.black, // Changez la couleur d'arrière-plan en noir
+  color: theme.palette.error.main,
+  backgroundColor: theme.palette.common.black,
   padding: theme.spacing(2),
   borderRadius: theme.shape.borderRadius,
   boxShadow: theme.shadows[1],
-  fontWeight: 'bold',
   fontSize: 24,
+  fontWeight: 'bold',
 
 
   '& .MuiTablePagination-displayedRows': {
@@ -38,6 +37,18 @@ const StyledTablePagination = styled(TablePagination)(({ theme }) => ({
   },
   '& .MuiTablePagination-actions': {
     justifyContent: 'flex-end',
+  },
+  [theme.breakpoints.down('sm')]: { // Ajoutez des Media Queries ici
+    padding: theme.spacing(1), // Réduisez la valeur de padding pour les petits écrans
+    '& .MuiTablePagination-displayedRows': {
+      display: 'none', // Cachez le nombre de lignes affichées pour les petits écrans
+    },
+    '& .MuiTablePagination-spacer': {
+      display: 'none', // Cachez l'espaceur pour les petits écrans
+    },
+    '& .MuiTablePagination-select': {
+      display: 'none', // Cachez la sélection du nombre de lignes par page pour les petits écrans
+    },
   },
 }));
 
