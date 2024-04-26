@@ -14,10 +14,38 @@ import Paper from '@mui/material/Paper'
 import Navigation from '../components/Navigation'
 import './tableaubrewers.css'
 
+const StyledTablePagination = styled(TablePagination)(({ theme }) => ({
+  color: theme.palette.error.main, // Changez la couleur du texte en rouge
+  backgroundColor: theme.palette.common.black, // Changez la couleur d'arrière-plan en noir
+  padding: theme.spacing(2),
+  borderRadius: theme.shape.borderRadius,
+  boxShadow: theme.shadows[1],
+  fontWeight: 'bold',
+  fontSize: 24,
+
+
+  '& .MuiTablePagination-displayedRows': {
+    margin: theme.spacing(1, 0),
+  },
+  '& .MuiTablePagination-spacer': {
+    flex: 'none',
+  },
+  '& .MuiTablePagination-select': {
+    margin: theme.spacing(1, 0),
+  },
+  '& .MuiTablePagination-selectLabel': {
+    marginRight: theme.spacing(1),
+  },
+  '& .MuiTablePagination-actions': {
+    justifyContent: 'flex-end',
+  },
+}));
+
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
+    color: theme.palette.error.main, // Changez la couleur du texte en rouge
+  backgroundColor: theme.palette.common.black, // Changez la couleur d'arrière-plan en noir
     fontSize: 24,
     fontFamily: 'Roboto, Arial, Verdana',
     letterSpacing: '0.5px',
@@ -27,8 +55,8 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     fontSize: 22,
     fontFamily: 'Roboto, Arial, Verdana',
     letterSpacing: '0.5px',
-    backgroundColor: theme.palette.common.white,
-    color: theme.palette.text.primary,
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
     fontWeight: 'bold', // Ajoutez une épaisseur de police ici
   },
 }))
@@ -98,7 +126,7 @@ function Tableaubrewers() {
               ))}
           </TableBody>
         </Table>
-        <TablePagination
+        <StyledTablePagination
           rowsPerPageOptions={[10, 25, 100]}
           component="div"
           count={Object.entries(nbBrasseriesParDepartement).length}
