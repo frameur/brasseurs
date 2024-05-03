@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Navigation from "../components/Navigation";
 import "./history.css";
 import img1 from "./images/introduction.jpg";
